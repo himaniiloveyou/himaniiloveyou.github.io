@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you Himani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contanier">
+ <div class="work">
+    <h1>I love you Himani</h1>
+    <p>I've come to understand the depth of my love for you, and I'm determined to rekindle our relationship. The mere thought of losing you is unbearable. Let's work together to rebuild what we once shared, with a newfound strength and commitment that will carry us through any challenges we may face.</p>
+    <div class="button">
+        <button onclick="showPopup()">Be mine yrr</button>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&#10006;</span>
+        Thank you babe for choosing me. I will never leave you. I love you.
+    </div>
+ </div>
+        </div>
+</body>
+<script>
+      function showPopup() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("popup").style.display = "block";
+        // Set opacity to 1 to trigger the transition effect
+        document.getElementById("popup").style.opacity = "1";
+    }
+
+    function closePopup() {
+        // Set opacity to 0 to trigger the transition effect
+        document.getElementById("popup").style.opacity = "0";
+        // Hide the popup after the transition
+        setTimeout(function() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("popup").style.display = "none";
+        }, 300); // Wait for the transition duration (300ms)
+    }
+</script>
+</html>
